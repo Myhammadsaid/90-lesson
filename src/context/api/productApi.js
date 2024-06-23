@@ -13,21 +13,21 @@ export const productApi = api.injectEndpoints({
     // Post request
     createProduct: build.mutation({
       query: (body) => ({
-        url: "/products",
+        url: "/products/create",
         method: "POST",
         body,
       }),
       invalidatesTags: ["Product"],
     }),
     // Patch request
-    updateProduct: build.mutation({
-      query: ({ _id, body }) => ({
-        url: `/`,
-        method: "PATCH",
-        body,
-      }),
-      invalidatesTags: ["Product"],
-    }),
+    // updateProduct: build.mutation({
+    //   query: ({ _id, body }) => ({
+    //     url: `/`,
+    //     method: "PATCH",
+    //     body,
+    //   }),
+    //   invalidatesTags: ["Product"],
+    // }),
     // Delete request
     deleteProduct: build.mutation({
       query: (id) => ({
