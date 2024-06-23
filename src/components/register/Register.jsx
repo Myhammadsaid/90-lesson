@@ -16,7 +16,8 @@ const initialState = {
 };
 const Register = () => {
   const [files, setFiles] = useState("");
-  const { formData, handleChange } = useGetInputValue(initialState);
+  const { formData, handleChange, setFormData } =
+    useGetInputValue(initialState);
   const [CreateProduct, { isLoading }] = useCreateProductMutation();
 
   const handleCreateUser = (e) => {
@@ -33,6 +34,7 @@ const Register = () => {
       form.append("files", img, img.name);
     });
     CreateProduct(form);
+    setFormData(initialState);
   };
   return (
     <div>
