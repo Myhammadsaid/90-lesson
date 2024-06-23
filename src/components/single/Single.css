@@ -1,0 +1,23 @@
+.single__style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.single__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 10px;
+}
+.single__content h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.single__content p {
+  font-size: 20px;
+  font-weight: 400;
+}

@@ -1,0 +1,55 @@
+.register h1 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.register__form {
+  display: flex;
+  max-width: 600px;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.register__input {
+  width: 100%;
+  font-size: 18px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  color: #1d2129;
+  text-indent: 12px;
+  padding: 15px 0;
+}
+
+.register__form textarea {
+  width: 100%;
+  height: 100px;
+  outline: none;
+  resize: none;
+}
+
+.register__btn {
+  background-color: #0866ff;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  transition: 0.2s;
+  color: #fff;
+}
+
+.local__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  gap: 10px;
+}
