@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery, retry } from "@reduxjs/toolkit/query/react";
 
 const baseQuery = fetchBaseQuery({
   // Asosiy API URL
-  baseUrl: "https://market.ilyosbekdev.uz",
+  baseUrl: "https://bazar.ilyosbekdev.uz",
   prepareHeaders: (headers) => {
     const token = localStorage.getItem("x-auth-token");
     if (token) {
