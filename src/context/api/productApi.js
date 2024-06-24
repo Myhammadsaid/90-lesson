@@ -22,7 +22,7 @@ export const productApi = api.injectEndpoints({
     // Patch request
     // updateProduct: build.mutation({
     //   query: ({ _id, body }) => ({
-    //     url: `/`,
+    //     url: `/products/${_id}`,
     //     method: "PATCH",
     //     body,
     //   }),
